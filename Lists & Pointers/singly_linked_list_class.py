@@ -97,6 +97,17 @@ class SinglyLinkedListFast:
             prev = current 
             current = current.next 
 
+    def search(self, data):
+        for node in self.iter():
+            if data == node:
+                return True
+        return False 
+
+    def clear(self):
+        """ Clear the entire list. """
+        self.tail = None
+        self.head = None 
+
 
 chars = SinglyLinkedListFast()
 
